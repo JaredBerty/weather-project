@@ -16,7 +16,9 @@ def create_table():
 
     # Create Tables for locations and Station IDs
     cur.execute('''CREATE TABLE IF NOT EXISTS Station
-        (id INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE, name TEXT, usaf_id TEXT, wban_id TEXT)''')
+        (id INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE, name TEXT, usaf_id TEXT, wban_id TEXT, lat REAL,
+        long REAL, elev REAL, country TEXT)''')
+
     print("Table created")
 
 
