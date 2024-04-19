@@ -1,4 +1,4 @@
-# weather
+# weather predictorinator
 Python 4 Everybody capstone project - quickly turning into a huge project - i cant stop though, my code is actually doing things wow
 
 Project Goals:
