@@ -1,14 +1,13 @@
 import re
-import sqlite3
-from urllib.parse import urlparse
+import config
 import urllib.error, urllib.request
 from bs4 import BeautifulSoup
 import json
-import csv
 
 
 # chatGPT helped clean up old code
-class URLScraper:
+class UrlScraper:
+
     def __init__(self):
         self.base_url = 'https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/'
 
@@ -43,10 +42,10 @@ class URLScraper:
     def scrape_urls(self, station_id):
         year_urls = self.get_year_urls()
         csv_urls = {}
-        for year_url in year_urls[:20]:  # Limiting to first 20 years for efficiency
+        for year_url in year_urls[:]:  # Limit amount of returns by year_urls[:20]
             csv_urls.update(self.extract_csv_urls(year_url, station_id))
-        self.save_csv_urls(csv_urls, st*ation_id)
+        self.save_csv_urls(csv_urls, station_id)
 
 
-scraper = URLScraper()
-scraper.scrape_urls("72466093037")
+scraper = UrlScraper()
+scraper.scrape_urls(config.TEST_STATION_ID)
