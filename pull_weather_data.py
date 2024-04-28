@@ -141,6 +141,11 @@ class PullWeatherData:
 
             file_name = f'data_for_{self.station_id}.json'
             # data = {"date": {}, "data": {}, "location_info": {}}
+
+            dest_dir = os.path.join(os.getcwd(),"test1")
+            if not os.path.exists(dest_dir):
+                os.mkdir(dest_dir)
+
             with open(file_name, 'r') as data:
                 data = json.load(data)
 
@@ -229,9 +234,22 @@ class PullWeatherData:
             else:
                 print(f"No matching record found in the {self.station_list_table} table.")
 
+    def test(self):
+        dest_dir = os.path.join(os.getcwd(), "json_data")
+        if not os.path.exists(dest_dir):
+            os.mkdir(dest_dir)
+        abspath = os.path.abspath(__file__)
+        dname = os.path.dirname(abspath)
+        print(dname)
+
+        if os.path.exists(dname):
+           print(dname)
+
 
 colorado_weather = PullWeatherData(config.TEST_STATION_ID)
-colorado_weather.create_table()
-colorado_weather.populate_bulk_table()
-colorado_weather.associate_data_to_station_list()
-colorado_weather.update_location_info_in_station_list()
+#colorado_weather.create_table()
+#colorado_weather.populate_bulk_table()
+#colorado_weather.associate_data_to_station_list()
+#colorado_weather.update_location_info_in_station_list()
+
+colorado_weather.test()

@@ -1,0 +1,25 @@
+Link to station search
+
+https://www.ncei.noaa.gov/access/search/data-search/global-summary-of-the-day?stations=72466093037
+
+Colorado Springs Municipality Sation ID: 72466093037
+
+- https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/
+This is summary of the day for the entire year, of various stations around the world. Will need to navigate to this,
+select each year, the search for and select station 72466093037 from the list.
+
+Alternitively, create a SQL data base that has all the station IDs matching to station name, and use that to search for any station.
+
+Trying to find out how to search for places based in  ID:
+72466093037
+NWS coop-stations: COS - colorado springs munt air USW00093037 (72466093037), last 6 digets match.
+72466 = WMO Station ID
+724660 = Air Force station ID. May contain a letter in the first position.
+93037 = NCDC WBAN number (Weather Bureau Army Navy)
+USW00093037 = GHCND ID, Populated if station is included in GHCN-Daily product (Global Hist Climatology Network Daily)
+
+ID look up locations:
+
+https://www.ncei.noaa.gov/access/homr/;
+https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-stations.txt (listed using
+https://www.ncei.noaa.gov/data/global-summary-of-the-day/
