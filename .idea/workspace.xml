@@ -2,20 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="591bd6ff-7f35-4f97-9e47-81c6f359b7b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pull_weather_data_old.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch_1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_channel.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json data/csv_urls_72258113960.json" beforeDir="false" afterPath="$PROJECT_DIR$/json_data/csv_urls_72258113960.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json data/csv_urls_72466093037.json" beforeDir="false" afterPath="$PROJECT_DIR$/json_data/csv_urls_72466093037.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json data/data_for_72258113960.json" beforeDir="false" afterPath="$PROJECT_DIR$/json_data/data_for_72258113960.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json data/data_for_72466093037.json" beforeDir="false" afterPath="$PROJECT_DIR$/json_data/data_for_72466093037.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pull_weather_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/pull_weather_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_goals.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/directory_management.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/directory_management.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/pull_weather_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/pull_weather_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/weather_channel.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/weather_channel.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pull_weather_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pull_weather_data_old.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/update_station.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/url_scrape.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather_channel.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/weather_channel.sqlite" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,7 +46,8 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jared/Desktop/Coursera/Python/Weather Project&quot;
   }
 }</component>
   <component name="RecentsManager">

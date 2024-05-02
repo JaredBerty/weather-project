@@ -3,14 +3,15 @@ import urllib.error, urllib.request
 import sqlite3
 import os
 import config
+from directory_management import DirectoryManager as dir
 
 
 class PullWeatherData:
 
     def __init__(self, station_id):
         self.station_id = station_id
-        self.parent_dir = os.path.dirname(os.path.abspath(__file__))
-        self.json_data_dir = os.path.join(self.parent_dir, 'json_data')
+        #self.parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        #self.json_data_dir = os.path.join(self.parent_dir, 'json_data')
         self.station_data_table = f'station_data_{self.station_id}'
         self.station_list_table = 'station_list'
         self.db_name = config.DB_NAME
@@ -21,7 +22,7 @@ class PullWeatherData:
 
     def compile_weather_data(self):
 
-        self.change_dir_to_json_data()
+        dir.change_dir_to_json_data()
         file_name_csv = f'csv_urls_{self.station_id}.json'
         file_name_station_data = f"data_for_{self.station_id}.json"
 
@@ -115,7 +116,9 @@ class PullWeatherData:
         return data
 
     def create_table(self):
-        self.change_dir_to_parent()
+        dir.change_dir_to_parent()
+
+
         with sqlite3.connect(self.db_name) as conn:
             cur = conn.cursor()
             # table_name = self.table_name
@@ -139,12 +142,12 @@ class PullWeatherData:
 
     def populate_bulk_table(self):
         # table_name = "station_data_" + station_id
-        self.change_dir_to_parent()
+        dir.change_dir_to_parent()
         with sqlite3.connect(self.db_name) as conn:
             cur = conn.cursor()
             self.compile_weather_data()
 
-            self.change_dir_to_json_data()
+            dir.change_dir_to_json_data()
             file_name = f'data_for_{self.station_id}.json'
             # data = {"date": {}, "data": {}, "location_info": {}}
 
@@ -178,7 +181,7 @@ class PullWeatherData:
                     sndp = weather_data.get("sndp")
                     frshtt = weather_data.get("frshtt")
 
-                    self.change_dir_to_parent()
+                    dir.change_dir_to_parent()
                     query = f'''INSERT OR IGNORE INTO "{self.station_data_table}" (date, temp, temp_atr, dewp, dewp_atr, slp, slp_atr, stp,
                      stp_atr, visib, visb_atr, wind_speed, wind_speed_atr, max_speed, gust, max_val, max_atr, min_val, 
                      min_atr, prcp, prcp_atr, sndp, frshtt) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)'''
@@ -197,7 +200,7 @@ class PullWeatherData:
         print(f"{self.station_data_table} was populated with {n} rows of weather data in {self.db_name}.")
 
     def associate_data_to_station_list(self):
-        self.change_dir_to_parent()
+        dir.change_dir_to_parent()
         with sqlite3.connect(self.db_name) as conn:
             cur = conn.cursor()
 
@@ -237,13 +240,6 @@ class PullWeatherData:
             else:
                 print(f"No matching record found in the {self.station_list_table} table.")
 
-    def change_dir_to_json_data(self):
-        os.chdir(self.json_data_dir)
-        print("changed directory to JSON data folder.")
-
-    def change_dir_to_parent(self):
-        os.chdir(self.parent_dir)
-        print("Changed directory to parent folder")
 
 
 colorado_weather = PullWeatherData(config.TEST_STATION_ID)
@@ -251,5 +247,3 @@ colorado_weather.create_table()
 colorado_weather.populate_bulk_table()
 colorado_weather.associate_data_to_station_list()
 # colorado_weather.update_location_info_in_station_list()
-
-colorado_weather.change_dir_to_json_data()
