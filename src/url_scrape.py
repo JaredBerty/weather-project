@@ -3,6 +3,7 @@ import config
 import urllib.error, urllib.request
 from bs4 import BeautifulSoup
 import json
+from directory_management import DirectoryManager
 
 
 # chatGPT helped clean up old code
@@ -34,17 +35,26 @@ class UrlScraper:
         return csv_urls
 
     def save_csv_urls(self, csv_urls, station_id):
-        filename = f'csv_urls_{station_id}.json'
-        with open(filename, 'w') as f:
-            json.dump(csv_urls, f, indent=4)
-        print(f"URLs saved to {filename}")
+        DirectoryManager.json()
+        try:
+            filename = f'csv_urls_{station_id}.json'
+            with open(filename, 'w') as f:
+                json.dump(csv_urls, f, indent=4)
+            print(f"URLs saved to {filename}")
+        finally:
+            DirectoryManager.root()
 
     def scrape_urls(self, station_id):
-        year_urls = self.get_year_urls()
-        csv_urls = {}
-        for year_url in year_urls[:]:  # Limit amount of returns by year_urls[:20]
-            csv_urls.update(self.extract_csv_urls(year_url, station_id))
-        self.save_csv_urls(csv_urls, station_id)
+
+        DirectoryManager.json()
+        try:
+            year_urls = self.get_year_urls()
+            csv_urls = {}
+            for year_url in year_urls[:]:  # Limit amount of returns by year_urls[:20]
+                csv_urls.update(self.extract_csv_urls(year_url, station_id))
+            self.save_csv_urls(csv_urls, station_id)
+        finally:
+            DirectoryManager.root()
 
 
 scraper = UrlScraper()

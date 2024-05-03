@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="591bd6ff-7f35-4f97-9e47-81c6f359b7b5" name="Changes" comment="WIP" />
+    <list default="true" id="591bd6ff-7f35-4f97-9e47-81c6f359b7b5" name="Changes" comment="WIP">
+      <change afterPath="$PROJECT_DIR$/src/weather_channel.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update_station.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/update_station.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/url_scrape.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/url_scrape.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

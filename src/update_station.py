@@ -4,6 +4,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import config
+from directory_management import DirectoryManager
 
 
 class UpdateStationList:
@@ -16,6 +17,8 @@ class UpdateStationList:
     def create_table(self):
         """ Create sqlite table that will store station info """
         # connect to sqlite database
+        DirectoryManager.root()
+
         with sqlite3.connect(self.db_name) as conn:
             cur = conn.cursor()
 
@@ -70,6 +73,9 @@ class UpdateStationList:
         return info
 
     def populate_stations(self):
+
+        DirectoryManager.root()
+
         info = self._pull_station_info()
         with sqlite3.connect(self.db_name) as conn:
             cur = conn.cursor()
