@@ -1,19 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="591bd6ff-7f35-4f97-9e47-81c6f359b7b5" name="Changes" comment="">
+    <list default="true" id="591bd6ff-7f35-4f97-9e47-81c6f359b7b5" name="Changes" comment="WIP">
+      <change afterPath="$PROJECT_DIR$/data/json/csv_urls_72258113960.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/json/csv_urls_72466093037.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/json/data_for_72258113960.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/json/data_for_72466093037.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Old Scripts/pull_weather_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Old Scripts/update_station.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Old Scripts/url_scrape.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/directory_management.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/predictor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pull_weather_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pull_weather_data_old.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/update_station.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/url_scrape.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_goals.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/directory_management.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/directory_management.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/pull_weather_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/pull_weather_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/weather_channel.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/weather_channel.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pull_weather_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pull_weather_data_old.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/update_station.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/url_scrape.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old Scripts/pull_weather_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old Scripts/update_station.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old Scripts/url_scrape.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/directory_management.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/predictor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/pull_weather_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/pull_weather_data_old.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/update_station.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/url_scrape.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/weather_channel.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json_data/csv_urls_72258113960.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json_data/csv_urls_72466093037.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json_data/data_for_72258113960.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json_data/data_for_72466093037.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json_data/weather_channel.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/weather_channel.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/weather_channel.sqlite" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
