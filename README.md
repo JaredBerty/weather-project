@@ -29,4 +29,4 @@ Develop models or algorithms to forecast weather patterns on specific dates or w
 5. Validation and Iteration:
 
 Validate assumptions and predictions by comparing them with observed weather data.
-Iterate on your analysis and prediction models based on new data and feedback.
+Iterate on the analysis and prediction models based on new data and feedback.
