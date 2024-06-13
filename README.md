@@ -1,4 +1,8 @@
 # weather predictorinator
+
+- - Project Still in work - -
+
+
 quickly turning into a huge project - i cant stop though, my code is actually doing things wow
 
 Project Goals:
