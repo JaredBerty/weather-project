@@ -59,7 +59,7 @@ class PullWeatherData:
 
                     date = date.replace(' ', "").replace('"', "")
 
-                    # Unpack the weather data into individual variables (if needed)
+                    # Unpack the weather data into individual variables
                     temp, temp_atr, dewp, dewp_atr, slp, slp_atr, stp, stp_atr, visib, visb_atr, \
                     wind_speed, wind_speed_atr, max_speed, gust, max_val, max_atr, \
                     min_val, min_atr, prcp, prcp_atr, sndp, frshtt = weather_data
